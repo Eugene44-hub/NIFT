@@ -1,0 +1,24 @@
+@use 'sass:math';
+@function btnTextColor($color) {
+    @if(lightness($color)>70) {
+        @return black;
+    }
+    @else {
+        @return white;
+    }
+}
+
+@mixin btn($color) {
+    color: btnTextColor($color);
+    background: $color;
+}
+
+@function rem($px, $default:16) {
+    @return (math.div($px, $default) * 1rem);
+}
+
+@mixin devices($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}

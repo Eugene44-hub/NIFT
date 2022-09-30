@@ -1,0 +1,38 @@
+@import "../../sass/index.scss";
+%searchBar {
+    color: white
+}
+
+.searchBar {
+    background: linear-gradient(90.28deg, rgba(255, 255, 255, 0.09) -5.54%, rgba(255, 255, 255, 0.16) 112.42%);
+    outline: none;
+    @extend %searchBar;
+    padding: 0 15px;
+}
+
+.searchBar::placeholder {
+    @extend %searchBar;
+    @include devices(640px) {
+        font-size: rem(10)
+    }
+}
+
+.createBtn {
+    background: linear-gradient(95.49deg, #FCAD02 -36.87%, #FF0041 98.63%);
+    padding: 10px 25px;
+    border-radius: 24px;
+    color: white;
+}
+
+.mobileNavItem {
+    @include devices(640px) {
+        font-size: rem(10);
+    }
+}
+
+.icon {
+    font-size: rem(24);
+    @include devices(1024px) {
+        font-size: rem(20);
+    }
+}

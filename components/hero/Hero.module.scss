@@ -1,0 +1,78 @@
+@import "../../sass/index.scss";
+%heroBtn {
+    font-size: rem(20);
+    border-radius: 36px;
+    padding: 12px 47px;
+    @include devices(640px) {
+        font-size: rem(10);
+        padding: 10px 35px;
+    }
+}
+
+.header {
+    font-size: rem(72);
+    font-weight: 600;
+    @include devices(640px) {
+        font-size: rem(40);
+    }
+    @include devices(1280px) {
+        font-size: rem(50);
+    }
+    @include devices(300px) {
+        font-size: rem(30);
+    }
+}
+
+.heroText {
+    font-size: rem(20);
+    @include devices(640px) {
+        font-size: rem(15);
+    }
+}
+
+.heroBtn {
+    @extend %heroBtn;
+    @include btn(white);
+}
+
+.create {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+}
+
+.topNfts {
+    @include devices(300px) {
+        display: none;
+    }
+    .centered,
+    .price {
+        @include devices(640px) {
+            font-size: rem(12);
+        }
+    }
+}
+
+$numbers:(0, 1);
+@function translateNumber($number) {
+    @if ($number==0) {
+        @return 3%;
+    }
+    @else {
+        @return -3%;
+    }
+}
+
+@each $number in $numbers {
+    .topNft#{$number} {
+        animation: moveNfts#{$number} 1.5s infinite alternate;
+    }
+    @keyframes moveNfts#{$number} {
+        0% {
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(translateNumber($number));
+        }
+    }
+}

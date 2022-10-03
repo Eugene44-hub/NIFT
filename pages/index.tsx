@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 import nft1 from "../public/assets/images/nft1.jpg"
 import Nav from '../components/nav/Nav'
 import Hero from '../components/hero/Hero'
+import DigitalProducts from '../components/digitalProducts/DigitalProducts'
 export default function Home() {
   return (
     <div >
@@ -17,7 +18,8 @@ export default function Home() {
       <Nav/>
       <Hero/>
       </div>
+      <DigitalProducts/>
+
     </div>
   )
 }
-``

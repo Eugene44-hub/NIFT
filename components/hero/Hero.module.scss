@@ -65,7 +65,7 @@ $numbers:(0, 1);
 
 @each $number in $numbers {
     .topNft#{$number} {
-        animation: moveNfts#{$number} 1.5s infinite alternate;
+        animation: moveNfts#{$number} 2s infinite alternate;
     }
     @keyframes moveNfts#{$number} {
         0% {

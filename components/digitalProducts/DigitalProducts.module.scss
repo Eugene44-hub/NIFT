@@ -1,0 +1,52 @@
+@import "../../sass/index.scss";
+.header {
+    font-size: rem(48);
+    font-weight: 600;
+    @include devices(620px) {
+        font-size: rem(28);
+    }
+}
+
+.filteredListItem {
+    font-size: rem(18);
+    font-weight: 600;
+}
+
+.filteredListItem:hover {
+    border: 1px solid transparent;
+}
+
+.productTitle {
+    font-size: rem(24);
+}
+
+.highestBid {
+    color: #747681;
+    margin-top: 8px;
+}
+
+.bid,
+.likes,
+.productTitle {
+    color: #04091E;
+    font-weight: 600;
+}
+
+.days,
+.hrs,
+.mins {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.days {
+    color: #34CAA5;
+}
+
+.hrs {
+    color: #F94025
+}
+
+.mins {
+    color: #B8E716
+}

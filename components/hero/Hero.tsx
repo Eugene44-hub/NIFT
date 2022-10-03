@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './Hero.module.scss'
 import DefaultLayout from '../../layouts/DefaultLayout'
 import { nft1 } from '../../public'
-import Image from 'next/image'
+import Image from 'next/future/image'
 const topNfts = [{
   image: nft1,
   text: "Dude"
@@ -35,13 +35,13 @@ const Hero = () => {
         </article>
 
         {/* top nfts */}
-        <figure className={`${styles.topNfts} flex gap-5 pt-[70px] lg:w-[50%] m-auto md:my-0 my-[50px]`}>
+        <figure className={`${styles.topNfts} hidden lg:flex gap-5 pt-[70px] lg:w-[50%] m-auto md:my-0 my-[50px]`}>
           {topNfts.map((item, index) => (
             <figcaption key={index} className={`${index==0?styles.topNft0:styles.topNft1} bg-[white]`}>
-              <Image src={item.image} alt="nft" />
+              <Image src={item.image} className="xl:h-[382px] " alt="nft" />
               <div className='flex gap-3  py-5 pl-3'>
                 <div className='w-[30px] h-[30px] rounded-full overflow-hidden'>
-                  <Image src={nft1} alt="user"/>
+                  <Image src={nft1}  alt="user"/>
                 </div>
                 <div>
                   <p className={`text-black ${styles.centered}`}>User centered</p>

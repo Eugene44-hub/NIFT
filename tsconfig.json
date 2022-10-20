@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "types/particles-config.ts"  ],
   "exclude": [
     "node_modules"
   ]

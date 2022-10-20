@@ -1,0 +1,15 @@
+@import "../../sass/index.scss";
+.h2 {
+    background-image: linear-gradient(to right, #02FCCF, #1448FF);
+    background-clip: text;
+    color: transparent;
+}
+
+.collectionList {
+    font-family: 'Urbanist', sans-serif;
+    .marked {
+        // background-image: linear-gradient(to right, #FCAD02, #FF0041, );
+        // color: transparent;
+        // background-clip: text;
+    }
+}

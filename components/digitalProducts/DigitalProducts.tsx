@@ -30,10 +30,10 @@ const filteredListItems: IFilteredListItems = [{
 const DigitalProducts = (): JSX.Element => {
   return (
     <DefaultLayout>
-      <div className=' md:mt-[126px] mt-[50px]'>
+      <div className={`${styles.container} md:mt-[126px] mt-[50px]`}>
         <div className='flex flex-wrap justify-end'>
 
-          <header className={`${styles.header}  w-full md:text-start text-center`}>
+          <header className={`${styles.header}  w-full lg:text-start text-center`}>
             Digital Products
           </header>
 
@@ -48,13 +48,13 @@ const DigitalProducts = (): JSX.Element => {
 
 
         <div className='flex justify-between'>
-          <ul className='md:max-w-[306px] md:block hidden w-[30%]'>
+          <ul className='md:max-w-[306px] lg:block hidden w-[30%]'>
             {filteredListItems.map((item: IFilteredListItem, index: number) => (
               <FilteredListItem {...item} key={index} />
             ))}
           </ul>
 
-          <div className='md:w-[75%] flex flex-wrap '>
+          <div className='lg:w-[75%] flex lg:justify-start justify-between   flex-wrap '>
             {Array(6).fill(1).map((item, index) => (
               <DigitalProduct key={index} />
             ))}

@@ -7,7 +7,7 @@ import { nft1 } from '../../public';
 const DigitalProduct = () => {
   return (
     <figure
-      className='p-2 pb-[16px] my-5 hover:scale-[1.05] transition-all rounded-lg m-auto border border-[#CDD6D7] '
+      className='p-2 pb-[16px] max-w-[306px] my-5 hover:scale-[1.05] transition-all rounded-lg m-auto border border-[#CDD6D7] '
     >
 
       <div className='h-[382px] flex  relative sm:w-[282px] w-full'>
@@ -19,7 +19,7 @@ const DigitalProduct = () => {
           Art
         </p>
 
-        <div className='absolute text-[#747681] bottom-0 flex left-[50%] translate-x-[-50%] translate-y-[50%] bg-white py-2 px-5 rounded-lg shadow-lg '>
+        <div className='absolute text-[#747681] bottom-0 flex left-[50%] translate-x-[-50%] translate-y-[50%] bg-white py-2  rounded-lg shadow-lg px-3'>
           <p><span className={styles.days}>12</span>days</p>
           <p className={`mx-5`}> <span className={styles.hrs}>7</span>hrs</p>
           <p><span className={styles.mins}>30</span>secs</p>

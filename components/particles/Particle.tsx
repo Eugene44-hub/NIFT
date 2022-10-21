@@ -58,13 +58,13 @@ const Particle = () => {
           },
           links: {
             color: "#ffffff",
-            distance: 150,
+            distance: 50,
             enable: true,
             opacity: 0.5,
             width: 1,
           },
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             direction: "none",
@@ -73,7 +73,7 @@ const Particle = () => {
               default: "bounce",
             },
             random: false,
-            speed: 3,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -84,10 +84,10 @@ const Particle = () => {
             value: 80,
           },
           opacity: {
-            value: .8,
+            value: 1,
           },
           shape: {
-            type: "square",
+            type: ["circle","square"],
           },
           size: {
             value: { min: 1, max: 5 },

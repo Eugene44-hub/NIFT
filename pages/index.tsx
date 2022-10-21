@@ -8,10 +8,11 @@ import Hero from '../components/hero/Hero'
 import DigitalProducts from '../components/digitalProducts/DigitalProducts'
 import TopCollection from '../components/topCollection/TopCollection'
 import Particle from '../components/particles/Particle'
+import BusinessProcess from '../components/businessProcess/BusinessProcess'
 
 export default function Home() {
 
- return(
+  return (
     <div >
       <Head>
         <title>Home</title>
@@ -19,13 +20,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${styles.testDiv1}`}>
-        <Particle/>
-      <Nav/>
-      <Hero/>
+        <Particle />
+        <Nav />
+        <Hero />
       </div>
-      <DigitalProducts/>
-<TopCollection/>
-  
+      <DigitalProducts />
+      <TopCollection />
+      <BusinessProcess />
 
     </div>
   )

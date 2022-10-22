@@ -8,7 +8,7 @@ export interface IFilteredListItem {
 }
 export type IFilteredListItems = IFilteredListItem[]
 export interface IProcess {
-  image: string;
+  image: JSX.Element;
   header: string;
   businessProcess: string;
 }
